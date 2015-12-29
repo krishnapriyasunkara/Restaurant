@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MENU</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript">
+        var i = 0;
+        var image = new Array();
+        // LIST OF IMAGES
+        image[0] = "images/menu_1.png";
+        image[1] = "images/menu_2.png";
+        image[2] = "images/menu_3.png";
+        image[3] = "images/menu_4.png";
+
+        var k = image.length-1;
+        var caption = new Array();
+
+        // LIST OF CAPTIONS
+        caption[0] = "";
+        caption[1] = "";
+        caption[2] = "";
+        caption[3] = "";
+
+
+        function next(){
+            var el = document.getElementById("mydiv");
+            el.innerHTML=caption[i];
+            var img= document.getElementById("slide");
+            img.src= image[i];
+            if(i < k ) { i++;}
+            else  { i = 0; }
+        }
+
+        function prev(){
+            var el = document.getElementById("mydiv");
+            el.innerHTML=caption[i];
+            var img= document.getElementById("slide");
+            img.src= image[i];
+            if(i >0 ) { i--;}
+            else  { i = k; }
+        }
+
+        function swapImage(){
+            var el = document.getElementById("mydiv");
+            el.innerHTML=caption[i];
+            var img= document.getElementById("slide");
+            img.src= image[i];
+            if(i < k ) { i++;}
+            else  { i = 0; }
+            setTimeout("swapImage()",10000000);
+        }
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else  {
+                window.onload = function() {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                    func();
+                }
+            }
+        }
+        addLoadEvent(function() {
+            swapImage();
+        });
+    </script>
+
+    <div  class="headborder">
+
+        <img src="images/header.jpg" alt="Header"  style="width:65%;height:20%;">
+        <img src="images/logo.png" alt="Logo" style="width:20%;height:20%;">
+        <a href="login.html"> <img src="images/login.png" alt="Logo" style="width:80px;height:100px;"></a>
+
+
+
+    </div>
+
+    <div id="menu" class="menuitems" align="center">
+
+
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a>
+                <ul class="dropdown">
+                    <li><a href="checkres.html">Check Reservations</a></li>
+                    <li><a href="newreservations.html">New Reservstions</a></li>
+                </ul>
+            </li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="locations.html">LOCATIONS</a></li>
+
+
+        </ul>
+
+
+    </div>
+    <h1 class="textcolor1" align="center">Our Delicious MENU </h1>
+    <table class="menutable">
+        <tr>
+            <td>
+                <img onclick="prev()" class="previousnext" title="Previous" alt ="Prev" src="images/previous.png"/>
+            </td>
+            <td>
+              <img name="slide" id="slide" class="menuimages" alt ="images" src="images/menu_1.png"/>
+            </td>
+            <td>
+                <img onclick="next()" title="Next" class="previousnext" alt ="Next" src="images/next.png"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <div id ="mydiv"></div>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+    </table>
+
+
+</head>>
+<body>
+<div id="footermenu" class="footermenuitems">
+
+
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="reservations.html">RESERVATIONS</a>
+            <ul class="dropdown">
+                <li><a href="checkres.html">Check Reservations</a></li>
+                <li><a href="newreservations.html">New Reservstions</a></li>
+            </ul>
+        </li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="locations.html">LOCATIONS</a></li>
+
+
+    </ul>
+
+
+</div>
+</body>
+</html>

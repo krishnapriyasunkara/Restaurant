@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Tables</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script>
+        function guid() {
+                var y,txt1;
+            y = Math.random().toString(36).substr(2, 16);
+            txt1 = "This is confirmation number   :     ";
+            return [txt1,y];
+
+
+        }
+
+        function myFunction() {
+            var txt,i;
+
+            var r = confirm(guid());
+            if (r == true) {
+
+                txt = "You pressed OK!";
+            } else {
+                txt = "You pressed Cancel!";
+            }
+            document.getElementById("demo").innerHTML = txt;
+
+        }
+    </script>
+    <div  class="headborder">
+
+        <img src="images/header.jpg" alt="Header"  style="width:65%;height:20%;">
+        <img src="images/logo.png" alt="Logo" style="width:20%;height:20%;">
+        <a href="login.html"> <img src="images/login.png" alt="Logo" style="width:80px;height:100px;"></a>
+
+
+
+    </div>
+
+    <div id="menu" class="menuitems" align="center">
+
+
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a>
+                <ul class="dropdown">
+                    <li><a href="checkres.html">Check Reservations</a></li>
+                    <li><a href="newreservations.html">New Reservations</a></li>
+                </ul>
+            </li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="locations.html">LOCATIONS</a></li>
+
+
+        </ul>
+
+
+    </div>
+
+</head>
+
+<body>
+<div class="slider">
+    <h1>Select the table number you need to be seated</h1>
+    <img src="images/bartable.png"  style="width:480px;height:300px;"> <br>
+  <img src="images/entrnace.jpg"  style="width:180px;height:50px;"><br>
+    <a href="editreservations.html"><img src="images/table4.jpg"  style="width:180px;height:200px;"> </a>
+    <a href="editreservations.html"><img src="images/table4.jpg"  style="width:180px;height:200px;"> </a>
+    <a href="editreservations.html"><img src="images/table4.jpg"  style="width:180px;height:200px;"> </a><br>
+    <a href="editreservations.html"><img src="images/table4.jpg"  style="width:180px;height:200px;"> </a>
+    <a href="editreservations.html"><img src="images/table8.jpg"  style="width:180px;height:200px;"> </a>
+    <a href="editreservations.html"><img src="images/table4.jpg"  style="width:180px;height:200px;"> </a><br>
+    <a href="editreservations.html"><img src="images/table4.jpg"  style="width:180px;height:200px;"> </a>
+    <a href="editreservations.html"><img src="images/table4.jpg"  style="width:180px;height:200px;"> </a>
+    <a href="editreservations.html"><img src="images/table4.jpg"  style="width:180px;height:200px;"> </a><br>
+    <a href="editreservations.html"><img src="images/table8.jpg"  style="margin-left:25%;width:180px;height:200px;"> </a><br>
+    <p>Table Number Selected
+    <textarea></textarea></p>
+    <button onclick="myFunction()">Confirm</button>
+</div>
+<!--<div id="footermenu" class="footermenuitems" align="center">-->
+
+
+    <!--<ul>-->
+        <!--<li><a href="home.html">HOME</a></li>-->
+        <!--<li><a href="menu.html">MENU</a></li>-->
+        <!--<li><a href="reservations.html">RESERVATIONS</a>-->
+            <!--<ul class="dropdown">-->
+                <!--<li><a href="checkres.html">Check Reservations</a></li>-->
+                <!--<li><a href="newreservations.html">New Reservstions</a></li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li><a href="events.html">EVENTS</a></li>-->
+        <!--<li><a href="locations.html">LOCATIONS</a></li>-->
+
+
+    <!--</ul>-->
+
+
+</div>
+</body>
+</html>

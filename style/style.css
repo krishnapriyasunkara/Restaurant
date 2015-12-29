@@ -1,0 +1,211 @@
+.headborder {
+
+
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+
+}
+
+
+.menuitems{
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    background-color: darkseagreen;
+    font-size: 20px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 8px;
+}
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    list-style: none;
+    margin: 0px;
+
+}
+#menu li {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+#menu a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    font-style: italic;
+     display: block;
+    transition:all linear 0.15s;
+    padding: 8px 8px 8px 8px;
+}
+#menu a:hover{
+           background: white;
+}
+ #menu  ul li ul.dropdown{
+        background-color: darkseagreen;
+        display: none;
+        position: absolute;
+        z-index: 500;
+    	    }
+#menu   ul li:hover ul.dropdown{
+         display: block; /* Display the dropdown */
+    	    }
+#menu ul li ul.dropdown li{
+    display: block;
+       }
+
+.slider {
+    background-color: white;
+    color:  darkblue;
+    height: 25em;
+    width:68%;
+    margin-left:15%;
+    margin-right:15%;
+    position: absolute;
+    top: 40%;
+}
+
+.timings{
+
+    top: 45em;
+    height: 25em;
+    width:68%;
+    margin-right:15%;
+    padding: .5em;
+    position: absolute;
+    font-size: 15px;
+    font-family: "Times New Roman";
+    font-style: italic;
+    color: darkblue;
+    display: block;
+}
+
+.footermenuitems {
+
+    background-color: darkseagreen;
+    font-size: 20px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+    border-radius: 8px;
+    height: 60px;
+    top: 60rem;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: .5em;
+    position: absolute;
+    width: 70%;
+}
+#footermenu ul {
+    height: auto;
+    padding: 8px 0px;
+    list-style: none;
+    margin: 0px;
+
+}
+#footermenu li {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+#footermenu a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    font-style: italic;
+    display: block;
+    transition:all linear 0.15s;
+    padding: 8px 8px 8px 8px;
+}
+#footermenu a:hover{
+    background: white;
+}
+#footermenu  ul li ul.dropdown{
+    background-color: yellow;
+    display: none;
+    position: absolute;
+    z-index: 500;
+}
+#footermenu   ul li:hover ul.dropdown{
+    display: block; /* Display the dropdown */
+}
+#footermenu ul li ul.dropdown li{
+    display: block;
+}
+.login{
+
+    margin: auto;
+    left: 20%;
+    top:25%;
+    width: 60%;
+    border: 10px solid;
+    position: absolute;
+    color: red;
+    text-align: center;
+}
+#submit {
+    width: 10em;
+    height: 3em;
+}
+#reset {
+    width: 10em;
+    height: 3em;
+}
+#Username{
+    width: 14em;
+    height: 2em;
+}
+#Password{
+    width: 14em;
+    height: 2em;
+}
+.textcolor{
+    color: darkblue;
+    font-size: 30px;
+    font-family: "Times New Roman";
+    font-style: italic;
+}
+.textcolor1{
+    color: lightseagreen;
+    font-size: 30px;
+    font-family: "Times New Roman";
+    font-style: normal;
+}
+.hometable {
+    background-color: white;
+    height: 25em;
+    width:71%;
+    margin-left:15%;
+    margin-right:15%;
+    padding: .5em;
+    position: relative;
+    top: 40%;
+}
+.homeimages{
+    height:20rem;
+    width:100%;
+    margin-right:15%;
+}
+.menutable {
+    background-color: white;
+    height: 45em;
+    width:71%;
+    margin-left:15%;
+    margin-right:15%;
+    padding: .5em;
+    position: relative;
+    top: 40%;
+}
+.menuimages{
+    height:35rem;
+    width:100%;
+    margin-right:15%;
+}
+.previousnext{
+    height: 3em;
+    width:50%;
+    margin-left:15%;
+    margin-right:15%;
+}
